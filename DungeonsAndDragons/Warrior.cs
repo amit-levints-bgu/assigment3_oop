@@ -16,4 +16,6 @@ public class Warrior:Player
     {
 
     }
+    
+    public cast_the_ability
 }
