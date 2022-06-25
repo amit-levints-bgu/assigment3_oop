@@ -24,12 +24,13 @@ public class Player:Unit
 
     public void LevelingUp()
     {
-        if(this.PlayerLevel * 50 <= this.Experience){
-            this.Experience = this.Experience - this.PlayerLevel*50;
-            this.PlayerLevel ++;
+        if (PlayerLevel * 50 <= Experience){
+            Experience =- PlayerLevel*50;
+            PlayerLevel ++;
+            HealthPool =+ 10 * PlayerLevel;
+            HealthAmount = HealthPool;
+            AttackPoints =+4 * PlayerLevel;
+            DefensePoints =+ PlayerLevel;
         }
     }
-
-
-   
 }

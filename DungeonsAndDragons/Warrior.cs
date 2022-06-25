@@ -6,10 +6,9 @@ public class Warrior:Player
     int remainingCooldown;  //number of ticks remained until the warrior can use its special ability.
 
 
-    public Warrior(int abilityCooldown) :
+    public Warrior(int abilityCooldown) :base()
     {
-       super();
-       this.abilityCooldown = abilityCooldown;
+        this.abilityCooldown = abilityCooldown;
        this.remainingCooldown = 0;
     }
 
