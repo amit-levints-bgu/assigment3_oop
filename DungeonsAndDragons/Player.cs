@@ -2,10 +2,10 @@ namespace DungeonsAndDragons;
 
 public class Player:Unit
 {
-    public int Experience;  // Increased by killing enemies
-    public int PlayerLevel; // Increased When Experience reached to 50 X level
-    public int HealthPool;
-    public int HealthAmount;
+    protected int Experience;  // Increased by killing enemies
+    protected int PlayerLevel; // Increased When Experience reached to 50 X level
+    protected int HealthPool;
+    protected int HealthAmount;
 
 
     public Player(int Experience, int PlayerLevel, int HealthPool, int HealthAmount) : base()
