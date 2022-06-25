@@ -2,12 +2,19 @@ namespace DungeonsAndDragons;
 
 public class Warrior:Player
 {
-    int cooldown; //The Warrior cant use the ability if cooldown > 0
+    int abilityCooldown; // number of game ticks required to pass before using the ability.
+    int remainingCooldown;  //number of ticks remained until the warrior can use its special ability.
 
 
-    public Warrior() :
+    public Warrior(int abilityCooldown) :
     {
        super();
-       cooldown = 0;
+       this.abilityCooldown = abilityCooldown;
+       this.remainingCooldown = 0;
+    }
+
+    public void levelingUpWarrior()
+    {
+
     }
 }
